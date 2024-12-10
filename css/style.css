@@ -1,0 +1,226 @@
+:root {
+    --dark-100: #121214;
+
+    --zinc-100: #A1A1AA;
+    --zinc-400: #94A3B8;
+
+    --purple-400: #443E54;
+    --purple-600: #2A2634;
+
+    --black-100: #000000;
+    --white-100: #FFFFFF;
+
+    --gradient: linear-gradient(to right, #111111 0, #d9d9d9bd 40%, #d40606 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter" sans-serif;
+}
+
+body {
+    display: grid;
+    padding-bottom: 44px;
+    padding-top: 32px;
+    gap: 24px;
+    -webkit-font-smoothing: antialiased;
+    cursor: url("../berserk_icons01/d_killer.Cur"), auto;
+    overflow-x: scroll none;
+}
+
+.fundo {
+    background-size: cover;
+    background-position: center;
+    animation: animation;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transition: all .5s linear;
+    transform: scale3d(5);
+}
+
+
+
+.box-1 {
+    padding-top: 4px;
+    background-image: var(--gradient);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 580px;
+    gap: 16px;
+    box-shadow: -10px 20px 30px;
+    margin: 0 auto;
+
+
+
+}
+
+.box-2 {
+    padding: 24px 32px 32px 32px;
+    display: flex;
+    background: #111111;
+    border-radius: 8px;
+    gap: 24px;
+    flex-direction: column;
+    transition: all .3s ease-in-out;
+
+}
+
+.gamers {
+    display: flex;
+    height: 120px;
+    width: 90px;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+    box-shadow: 10px 5px 10px;
+    cursor: url("../berserk_icons01/d_killer\ busy.Cur"), auto;
+
+}
+
+.streamers {
+    display: flex;
+    gap: 16px;
+    transition: all .2s;
+    cursor: url("../berserk_icons01/d_killer\ busy.Cur"), auto;
+}
+
+span strong {
+    color: var(--white-100);
+    font-weight: 900;
+}
+
+p {
+    line-height: 25px;
+    color: var(--zinc-100);
+    font-weight: 400;
+
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+}
+
+strong {
+    font-size: 24px;
+    width: 135px;
+    height: 38px;
+    line-height: 38px;
+    text-shadow: -5px 4px 3px rgb(0, 0, 0);
+}
+
+p {
+    display: block;
+
+    height: 26px;
+    font-size: 16px;
+    text-shadow: -5px 4px 3px rgb(0, 0, 0);
+
+}
+
+
+
+
+.social {
+    padding-top: 24px;
+    transition: all .2s ease-in;
+    line-height: 16px;
+    cursor: url("../berserk_icons01/d_killer\ busy.Cur"), auto;
+}
+
+.icons {
+    margin: auto;
+    background-image: var(--gradient);
+    border-radius: 100%;
+    padding: 4px 4px 0px 4px;
+    box-shadow: 5px 10px 25px #d40606c5;
+    transition: all .3s ease-in-out;
+    animation-name: animation;
+    animation-duration: .3s;
+    animation-direction: normal;
+    cursor: url("../berserk_icons01/d_killer\ busy.Cur"), auto;
+}
+
+
+.streamers {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--purple-400);
+    background-size: cover;
+    box-shadow: -5px 5px 10px;
+}
+
+.eu {
+    height: 120px;
+    width: 120px;
+
+    border-radius: 100px;
+}
+
+.gamers:hover {
+    transform: translatey(-20px);
+
+}
+
+.streamers:hover {
+    transform: translatey(-20px);
+}
+
+.social:hover {
+    transform: translatey(-20px);
+}
+
+.col:hover .gamers {
+    opacity: .5;
+}
+
+.col .gamers:hover {
+    opacity: 1;
+}
+
+.col:hover .streamers {
+    opacity: .5;
+}
+
+.col .streamers:hover {
+    opacity: 1;
+}
+
+.col:hover .social {
+    opacity: .5;
+}
+
+.col .social:hover {
+    opacity: 1;
+}
+
+.box-2:hover {
+    background-image: url(../assets/guts.gif);
+}
+
+.icons:hover {
+    transform: scale(1.25);
+    background: url(../assets/neon-circle.gif);
+    background-position: center;
+    background-size: 200%;
+}
+
+
+
+@keyframes animation {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

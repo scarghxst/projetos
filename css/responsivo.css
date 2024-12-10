@@ -1,0 +1,71 @@
+@media (max-width: 728px) {
+    body {
+       background-image: url(../assets/fundo\ responsivo.gif);
+       background-position: center;
+       background-size: cover;
+       margin: 30px 40px 0 40px;
+       align-items: center;
+       justify-content: center;
+       
+    }
+
+    .box-1 {
+        max-width: 100%;
+        align-items: center;
+        margin: 0 auto;
+        padding-bottom: 5px;
+        grid-column: repeat(auto-fil, minmax(468px 1fr));
+        box-shadow: -0px 5px 15px ;
+
+    }
+
+    .box-2 {
+        align-items: center;
+        width: 100%;
+
+
+    }
+
+
+    .gamers {
+        height: 60px;
+        width: 60px;
+        min-height: 100%;
+        min-width: 100%;
+        box-shadow: 10px 5px 10px;
+        transition: all .3s ease-in-out;
+    }
+
+    .gamers:hover {
+        transform: scale(2);
+        box-shadow: -0px 5px 15px red;
+    }
+
+
+
+    .box-1 strong {
+        font-size: 30px;
+    }
+
+    .box-1 span {
+        font-size: 10px;
+    }
+
+    .icons {
+        width: 100px;
+        height: 100px;
+    }
+
+    .eu {
+        width: 90px;
+        height: 90px;
+    }
+
+    .streamers {
+        box-shadow: 10px 5px 10px;
+    }
+
+    .streamers:hover {
+        box-shadow: -0px 5px 10px red;
+    }
+}
