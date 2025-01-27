@@ -61,6 +61,8 @@ body {
     gap: 24px;
     flex-direction: column;
     transition: all .3s ease-in-out;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -119,6 +121,7 @@ p {
     text-shadow: -5px 4px 3px rgb(0, 0, 0);
 
 }
+ 
 
 
 
@@ -128,6 +131,8 @@ p {
     transition: all .2s ease-in;
     line-height: 16px;
     cursor: url("../berserk_icons01/d_killer\ busy.Cur"), auto;
+    width: 39px;
+    height: 80px;
 }
 
 .icons {

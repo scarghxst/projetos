@@ -3,37 +3,32 @@
        background-image: url(../assets/fundo\ responsivo.gif);
        background-position: center;
        background-size: cover;
-       margin: 30px 40px 0 40px;
+       background-repeat: no-repeat;
        align-items: center;
        justify-content: center;
-       
+  
     }
-    
-
+   
     .box-1 {
+        text-align: center;
         max-width: 100%;
-        align-items: center;
-        margin: 0 auto;
-        padding-bottom: 5px;
-        grid-column: repeat(auto-fil, minmax(468px 1fr));
-        box-shadow: -0px 5px 15px ;
-
+       
+        box-shadow: -0px 5px 15px black ;
+        
     }
 
     .box-2 {
-        align-items: center;
+        align-items: justify;
         width: 100%;
-
-
+        background-position: center;
+        background-size: cover;
     }
 
 
     .gamers {
         height: 60px;
-        width: 60px;
-        min-height: 100%;
-        min-width: 100%;
-        box-shadow: 10px 5px 10px;
+        width: 50px;
+        box-shadow: 10px 5px 10px black;
         transition: all .3s ease-in-out;
     }
 
@@ -63,7 +58,9 @@
     }
 
     .streamers {
-        box-shadow: 10px 5px 10px;
+        box-shadow: 10px 5px 10px black;
+        width: 60px;
+        height: 50px;
     }
 
     .streamers:hover {
